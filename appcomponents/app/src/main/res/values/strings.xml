@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Activity</string>
+    <string name="content_providers_example">Content Providers Example</string>
+    <string name="broadcast_receivers_example">Broadcast Receivers Example</string>
+    <string name="service_example">Service Example</string>
+    <string name="activity_example">Activity Example</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="unbind_service">UnBind Service</string>
+    <string name="rebind_service">ReBind Service</string>
+    <string name="turn_on_or_off_airplanemode_to_get_broadcast">Turn On or Off AirplaneMode to get Broadcast</string>
 </resources>
