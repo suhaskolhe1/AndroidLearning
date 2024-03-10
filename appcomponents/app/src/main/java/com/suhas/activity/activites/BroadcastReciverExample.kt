@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.suhas.activity.R
 import com.suhas.activity.broadcast.MyReceiver
 
-class ReciverExample : AppCompatActivity() {
+class BroadcastReciverExample : AppCompatActivity() {
     private val reciver: MyReceiver = MyReceiver()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

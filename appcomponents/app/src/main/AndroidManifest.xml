@@ -25,15 +25,24 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".broadcast.MyReceiver"
+        <receiver
+            android:name=".broadcast.MyReceiver"
             android:exported="true"
             tools:ignore="ExportedReceiver" />
 
 
         <service android:name=".services.MyService" />
+
         <activity android:name=".activites.ServiceExample" />
-        <activity android:name=".activites.ReciverExample"/>
-        <activity android:name=".activites.ProviderExample"/>
+        <activity android:name=".activites.BroadcastReciverExample" />
+        <activity android:name=".activites.ProviderExample" />
+        <activity android:name=".activites.ContentResolverExample"/>
+
+        <provider
+            android:name="com.suhas.activity.providers.MyProvider"
+            android:authorities="com.suhas.activity.provider"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

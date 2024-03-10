@@ -10,4 +10,10 @@
     <string name="unbind_service">UnBind Service</string>
     <string name="rebind_service">ReBind Service</string>
     <string name="turn_on_or_off_airplanemode_to_get_broadcast">Turn On or Off AirplaneMode to get Broadcast</string>
+    <string name="hintText">Enter User Name</string>
+    <string name="heading">Content Provider In Android</string>
+    <string name="insertButtontext">Insert Data</string>
+    <string name="loadButtonText">Load Data</string>
+    <string name="content_resolver_example">content resolver example</string>
+
 </resources>

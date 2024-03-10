@@ -31,5 +31,9 @@
         android:layout_height="wrap_content"
         android:text="@string/content_providers_example" />
 
-
+    <Button
+        android:id="@+id/content_resolver_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_resolver_example" />
 </LinearLayout>
