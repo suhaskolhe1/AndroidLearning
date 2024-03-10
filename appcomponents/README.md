@@ -6,4 +6,4 @@ This appcomponents directory showcases a functional Android application demonstr
 - `ContentProviders`
 - `BroadcastReceivers`
 - `Activity Lifecycle`
-- ``
+- `ContentResolver`
