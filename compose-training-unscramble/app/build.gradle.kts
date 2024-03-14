@@ -80,4 +80,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+
+    testImplementation("junit:junit:4.13.2")
 }
