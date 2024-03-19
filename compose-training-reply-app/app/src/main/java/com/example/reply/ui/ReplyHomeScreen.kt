@@ -96,8 +96,12 @@ fun ReplyHomeScreen(
     if (navigationType == ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER) {
         val navigationDrawerContentDescription = stringResource(R.string.navigation_drawer)
         PermanentNavigationDrawer(
+            modifier = Modifier.testTag(navigationDrawerContentDescription),
+
             drawerContent = {
-                PermanentDrawerSheet(Modifier.width(dimensionResource(R.dimen.drawer_width))) {
+                PermanentDrawerSheet(
+                    Modifier.width(dimensionResource(R.dimen.drawer_width))
+                ) {
                     NavigationDrawerContent(
                         selectedDestination = replyUiState.currentMailbox,
                         onTabPressed = onTabPressed,
@@ -110,7 +114,6 @@ fun ReplyHomeScreen(
                     )
                 }
             },
-            modifier = Modifier.testTag(navigationDrawerContentDescription)
         ) {
             ReplyAppContent(
                 contentType = contentType,
@@ -176,7 +179,7 @@ private fun ReplyAppContent(
                 if (contentType == ReplyContentType.LIST_AND_DETAIL) {
                     ReplyListAndDetailContent(
                         replyUiState = replyUiState,
-                        onEmailCardPressed = { activity.finish() },
+                        onEmailCardPressed = onEmailCardPressed,
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -193,12 +196,15 @@ private fun ReplyAppContent(
                 AnimatedVisibility(
                     visible = navigationType == ReplyNavigationType.BOTTOM_NAVIGATION
                 ) {
+                    val bottomNavigationDescription =
+                        stringResource(id = R.string.navigation_bottom)
                     ReplyBottomNavigationBar(
                         currentTab = replyUiState.currentMailbox,
                         onTabPressed = onTabPressed,
                         navigationItemContentList = navigationItemContentList,
                         modifier = Modifier
                             .fillMaxWidth()
+                            .testTag(bottomNavigationDescription)
                     )
                 }
             }

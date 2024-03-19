@@ -15,6 +15,7 @@
   ~ limitations under the License.
   -->
 <resources>
+
     <string name="app_name">Reply</string>
     <string name="navigation_drawer">Navigation Drawer</string>
     <string name="navigation_rail">Navigation Rail</string>
