@@ -17,6 +17,7 @@ package com.example.racetracker
 
 import com.example.racetracker.ui.RaceParticipant
 import junit.framework.TestCase.assertEquals
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.advanceTimeBy
 import kotlinx.coroutines.test.runCurrent
@@ -32,6 +33,7 @@ class RaceParticipantTest {
         progressIncrement = 1
     )
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun raceParticipant_RaceStarted_ProgressUpdated() = runTest {
         val expectedProgress = 1
@@ -42,6 +44,7 @@ class RaceParticipantTest {
 
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun raceParticipant_RaceFinished_ProgressUpdated() = runTest {
         launch { raceParticipant.run() }
