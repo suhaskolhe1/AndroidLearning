@@ -49,6 +49,7 @@ fun MarsPhotosApp() {
             val marsViewModel: MarsViewModel =
                 viewModel(factory = MarsViewModel.Factory)
             HomeScreen(
+                retryAction = marsViewModel::getMarsPhotos,
                 marsUiState = marsViewModel.marsUiState,
                 contentPadding = it,
             )
