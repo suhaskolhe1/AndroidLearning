@@ -17,3 +17,21 @@ When the app is running, you'll be able to send SQL commands to the database via
 3. Import the sample into Android Studio.
 4. Build and run the sample.
 
+---------------------------------
+
+# Quries Performed on Database
+
+1. Read data with a SELECT statement
+   - ` SELECT * FROM email; `
+   - ` SELECT subject FROM email; `
+   - ` SELECT subject, sender FROM email; `
+   - ` SELECT COUNT(*) FROM email;`
+   - ` SELECT MAX(received) FROM email;`
+   - ` SELECT DISTINCT sender FROM email;`
+   - ` SELECT COUNT(DISTINCT sender) FROM email;`
+   - ` SELECT * FROM email WHERE folder = 'inbox';`
+   - ` SELECT * FROM email WHERE folder = 'inbox' AND read = false;`
+   - ` SELECT * FROM email WHERE folder = 'important' OR starred = true;`
+   - ` SELECT COUNT(*) FROM email WHERE subject LIKE '%fool%';`
+
+   
