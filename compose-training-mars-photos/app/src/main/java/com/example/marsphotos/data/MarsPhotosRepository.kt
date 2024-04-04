@@ -10,5 +10,4 @@ class NetworkMarsPhotosRepository(
     private val marsApiService: MarsApiService
 ):MarsPhotosRepository{
     override suspend fun getMarsPhotos()=marsApiService.getPhotos()
-
 }
